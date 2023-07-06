@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html language="en">
+
+<head>
+  <meta charset="UTF=8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> V-Design Studios</title>
+  <!--Link to css-->
+  <link rel="stylesheet" href="style.css">
+  <!--Box-Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body id="body">
+  <!--Navbar-->
+  <header id="header">
+    <input type="checkbox" id="toggle_checkbox" onclick="dark_mode()">
+    <label for="toggle_checkbox">
+      <div id="star">
+        <div class="star" id="star-1">★</div>
+        <div class="star" id="star-2">★</div>
+      </div>
+      <div id="moon"></div>
+    </label>
+    <a href="#" class="logo"><i class='bx bxl-99designs'></i>V-Design Studios</a>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#Customers">Our Clients</a></li>
+      <li><a href="#Reviews">Reviews</a></li>
+    </ul>
+
+    <!--Icons-->
+    <div class="header-icons">
+      <i class='bx bx-menu-alt-right'></i>
+      <i class='bx bx-search' id="search-icon" onclick="myFunction()" ondblclick="myFunction2()"></i>
+      <i class='bx bx-user' id="user-icon" onclick="display()" ondblclick="disappear()"></i>
+    </div>
+
+    <!--Search Box-->
+    <div class="search-box" id="search">
+      <input type="search" name="" id="" placeholder="Search Here">
+    </div>
+
+    <!--User-->
+    <div id="user">
+      <h2 id="info">Login Now</h2>
+      <input type="email" placeholder="Email" id="shadow">
+      <input type="password" name="" placeholder="Password" id="shadow2">
+      <input type="submit" value="Login" class="login-btn">
+      <p id="info2">Forget Password <a href="#">Reset Now</a></p>
+      <p id="info3">Don't have an account <a href="#"> Create One</a></p>
+    </div>
+  </header>
+
+  <!--Home-->
+  <section class="home" id="home">
+    <div class="home-text">
+      <span>Got an Idea</span>
+      <h1>
+        <marquee behaviour="scroll" scrollamount="15">Let's Implement It!</marquee>
+      </h1>
+      <div class="swiper about-us">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide search-box">
+            <img src="background2.jpg" alt="" height="600px"/>
+          </div>
+          <div class="swiper-slide search-box">
+            <img src="background3.jpg" alt="" height="600px"/>
+          </div>
+          <div class="swiper-slide search-box">
+            <img src="background4.jpg" alt="" height="600px"/>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">Contact Us</a>
+    </div>
+  </section>
+
+  <!--About Us-->
+  <section class="about" id="about">
+    <div class="heading">
+      <a href="https://vdesignstudio.co.in/" target="_blank">
+        <h1>About Us </h1>
+      </a>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!--Link to JS-->
+  <script src="main.js"></script>
+</body>
+
+</html>
